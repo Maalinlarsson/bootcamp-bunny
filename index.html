@@ -61,10 +61,10 @@ layout: default
   </div>
 </section>
 
-<!------------------------------- Text banner ------------------------------->
+<!------------------------------- Image/text banner ------------------------------->
 <section class="p-5p">
   <h2 class="uppercase text-6xl mb-5p font-bold"> This is a <br class="hidden sm:block"> fun heading </h2>
-  <div class="grid grid-cols-2">
+  <div class="grid grid-cols-2 gap-2">
     <div class="max-w-lg">
       <h3 class="uppercase mb-5p"> Another <br> <span class="border-t-2 border-black"> Sick Heading for attention </span></h3>
       <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, minima aspernatur ducimus quis temporibus vel fugiat accusantium harum doloremque nihil ea quos rerum modi asperiores, odit deserunt ipsam? At, officia? </p>
@@ -73,12 +73,11 @@ layout: default
         <a href="" class="uppercase border p-2 bg-black text-white px-8 py-2"> Sign up </a>
       </div>
     </div>
-    <div class="bg-[url('/images/moody-8.jpg')] bg-cover bg-center pb-50"></div>
-    <p class=""> credit: some legend </p>
+    <div class="flex">
+      <div class="bg-[url('/images/moody-8.jpg')] bg-cover bg-center  grow"></div>
+      <p class="vertical-text rotate-180"> credit: some legend </p>
+    </div>
   </div>
-  
-
-
 </section>
 
 <!------------------------------- Big text banner ------------------------------->
@@ -86,7 +85,40 @@ layout: default
   <p class="px-15p font-bold"> Sometimes all you need is a big random block of text to really drive home the point. </p>
 </section>
 
-<!------------------------------- Big text banner ------------------------------->
-<section class="border-t border-b border-black uppercase text-6xl text-center p-5p">
-  <p class="px-15p font-bold"> Sometimes all you need is a big random block of text to really drive home the point. </p>
+<!------------------------------- Gallery section ------------------------------->
+<section class="grid grid-cols-[5rem,1fr] gap-1 p-5p">
+  <div> 
+    <h2 class="vertical-text rotate-180 font-bold uppercase text-6xl"> Gallery </h2>
+  </div>
+  <div>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptate nisi dicta repellendus libero recusandae sequi incidunt odio voluptatem! Animi amet, suscipit nesciunt modi aliquam facilis explicabo maxime asperiores aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa in atque quam aliquid earum iste, voluptatum consequuntur eos molestiae repellendus. </p>
+    <p class="mt-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem, quaerat quis laudantium inventore veniam aliquid perferendis repudiandae harum iste voluptatum voluptas, corrupti autem consequuntur atque dolorum vero reiciendis beatae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. A maxime facilis eos minus, esse deserunt ex tempora mollitia voluptatum consequatur consequuntur repellendus voluptatibus laborum beatae, harum, minima saepe recusandae at. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non quaerat minus sapiente perferendis quo, veritatis animi aspernatur aliquid possimus? Eos iusto voluptate autem totam. Molestias minus neque quae repudiandae aspernatur. </p>
+
+    <div class="pt-5p">
+      <a href="" class="uppercase border p-2 bg-black text-white px-8 py-2"> Sign up </a>
+    </div>
+  </div>
+</section>
+
+<!------------------------------- Contact us ------------------------------->
+<section class="p-5p">
+  <h2 class="text-6xl uppercase"> Contact us </h2>
+
+  <div class="grid grid-cols-2">
+    <div class="justify-between flex items-center min-w-l">
+      <form>
+          <label for="name"> Name </label>
+          <input id="name" name="name" class="m-3 ml-0 border-2" type="text">
+          <label for="email"> Email </label>
+          <input id="email" name="email" type="email" class="m-3 ml-0 border-2">
+          <label for="message"> Message </label>
+          <textarea name="message" id="message" cols="40" rows="10" class="m-3 ml-0 border-2"></textarea>
+          <input type="submit" value="SEND IT BABY" class="bg-black text-white w-min ml-auto cursor-pointer">
+      </form>
+     </div>
+    <div>
+      <div class="bg-[url('/images/moody-13.jpg')] pb-100p bg-cover bg-center"></div>
+    </div>
+  </div>
+ 
 </section>
