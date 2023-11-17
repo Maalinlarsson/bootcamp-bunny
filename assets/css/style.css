@@ -502,6 +502,12 @@ video {
 .border-t-2 {
   border-top-width: 2px;
 }
+.border-t {
+  border-top-width: 1px;
+}
+.border-b {
+  border-bottom-width: 1px;
+}
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -541,6 +547,9 @@ video {
 .p-5 {
   padding: 1.25rem;
 }
+.p-10p {
+  padding: 10%;
+}
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -556,6 +565,18 @@ video {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+.px-5p {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.py-5p {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.px-15p {
+  padding-left: 15%;
+  padding-right: 15%;
 }
 .pb-100p {
   padding-bottom: 100%;
