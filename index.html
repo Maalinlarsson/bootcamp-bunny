@@ -1,75 +1,62 @@
 ---
 layout: default
 ---
-
-<!-- <style> {% include universal-styles.html %} </style> -->
-
-<section id="universal-styles">
-  <div class="heading-block grid-spaceBetween">
-    <h2 class="col">Universal Styles</h2>
-    <div class="col right">
-      <a class="demo button" onclick="$('#universal-styles .demo-info').slideToggle()">Show Universal Styles</a>
+<!------------------------------- Header banner ------------------------------->
+<section class="p-5p pt-0">
+  <h1 class="uppercase text-6xl pb-3 font-bold"> This is a <br class="hidden sm:block"> fun heading </h1>
+  <div class="bg-[url('/images/moody-1.jpg')] min-h-50 m-w-full bg-cover bg-center"></div>
+  <div class="grid grid-cols-6 pt-5p">
+    <div class="uppercase pt-5">
+      <span> Fact: </span>
+      <span class="font-bold block"> 900 </span>
     </div>
-  </div>
-
-  <div class="demo-info padded">
-    <pre>
-  <code class="language-css">
-  {% include universal-styles.html %}
-  </code>
-  </pre>
+    <div class="uppercase pt-5">
+      <span> Fact: </span>
+      <span class="font-bold block"> Y2K </span>
+    </div>
+    <div class="uppercase pt-5">
+      <span> Fact: </span>
+      <span class="font-bold block"> 420K </span>
+    </div>
+    <div class="col-span-3 pt-5 px-2">
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id explicabo animi necessitatibus dignissimos, aliquid veritatis nostrum facilis. Sint dolorum nisi quas unde asperiores non, animi commodi minima molestias officiis aliquid. </p>
+    </div>
   </div>
 </section>
 
-{% for block in site.blocks %}
-<section id="{{forloop.index}}-section">
-  <style media="screen">
-    {{block.css_code_block}}
-  </style>
-  <div class="bg-white example-block">
-    {{block.html_code_block}}
-  </div>
-
-  <div class="heading-block grid grid-cols-2">
-    <h2 class="">{{block.heading}}</h2>
-    <div class=" text-right">
-      <a class="demo button" onclick="$('#{{forloop.index}}-section .demo-info').slideToggle()">Show Code </a>
+<!------------------------------- Image grid ------------------------------->
+<section class="p-5p pt-0">
+  <div class="flex justify-center">
+    <div class="max-w-sm text-center"> 
+      <h2 class="font-black text-3xl uppercase leading-tight pb-5"> Another <br> <span class="font-normal text-2xl"> Sick Heading for attention </span> </h2>
+      <p class="text-xs pb-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis est, obcaecati corrupti sunt numquam ducimus vitae eveniet? Nostrum eligendi distinctio hic accusantium illum! Quam quasi itaque dignissimos necessitatibus nulla accusantium? </p>
     </div>
-  </div>
-
   
+  </div>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-2">
+      
+       <div class="pb-100p relative">
+          <img src="https://blocks.instituteofcode.com/images/moody/moody-2.jpg?_cchid=0fef09b02320d96a7cce0c367c674514" class="absolute object-cover h-full w-full">
+      </div>
+      <div class="pb-100p relative">
+          <img src="https://blocks.instituteofcode.com/images/moody/moody-3.jpg?_cchid=603906388d71c120d64d3cba32ed3285" class="absolute object-cover h-full w-full">
+      </div>
+      <div class="pb-100p relative">
+          <img src="https://blocks.instituteofcode.com/images/moody/moody-4.jpg?_cchid=5dff320233414ac68e54ece6037ad7ed" class="absolute object-cover h-full w-full">
+      </div>
+      <div class="pb-100p relative">
+          <img src="https://blocks.instituteofcode.com/images/moody/moody-5.jpg?_cchid=91f4c6b522d835d1868f839d6e3527a4" class="absolute object-cover h-full w-full">
+      </div>
+      <div class="pb-100p relative">
+          <img src="https://blocks.instituteofcode.com/images/moody/moody-6.jpg?_cchid=f9ae77f8a2a033d60b9ef66a99f3a418" class="absolute object-cover h-full w-full">
+      </div>
+      <div class="pb-100p relative">
+          <img src="https://blocks.instituteofcode.com/images/moody/moody-7.jpg?_cchid=cd3768898d94a2209892cb4057b2e817" class="absolute object-cover h-full w-full">
+          <img src="" class="absolute object-cover h-full w-full">
+      </div>
+  </div> 
 
-  <div class="demo-info p-5p">
-    <div>
-      <h3>HTML</h3>
-      <pre>
-            <code class="language-html">
-              {{block.html_code_block | replace: "<", "&#60;"}}
-            </code>
-          </pre>
-    </div>
-    {% if block.css_code_block %}
-    <div>
-      <h3>CSS</h3>
-      <pre>
-            <code class="language-css">
-              {{block.css_code_block}}
-            </code>
-          </pre>
-    </div>
-    <style> {{block.css_code_block}} </style>
-    {% endif %}
-
-    {% if block.js_code_block %}
-    <div>
-      <h3>JS</h3>
-      <pre>
-            <code class="language-js">
-              {{block.js_code_block}}
-            </code>
-          </pre>
-    </div>
-    {% endif %}
-
+  <div class="text-center p-5p">
+    <a href="" class="uppercase border p-2 bg-black text-white px-8 py-2"> Sign up </a>
+  </div>
 </section>
-{% endfor %}
