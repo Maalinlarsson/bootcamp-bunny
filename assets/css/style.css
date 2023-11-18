@@ -447,9 +447,6 @@ video {
 .ml-0 {
   margin-left: 0px;
 }
-.mt-10p {
-  margin-top: 10%;
-}
 .block {
   display: block;
 }
@@ -630,6 +627,10 @@ video {
 .text-center {
   text-align: center;
 }
+.text-sm {
+  font-size: 0.875rem;;
+  line-height: 1.2;
+}
 .text-3xl {
   font-size: 1.875rem;
   line-height: 1;
@@ -644,10 +645,6 @@ video {
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
-}
-.text-sm {
-  font-size: 0.875rem;;
-  line-height: 1.2;
 }
 .font-bold {
   font-weight: 700;
@@ -702,36 +699,6 @@ body input, body textarea {
   }
 }
 
-/* body{
-  background-color: rgb(90,90,95);
-  color: rgb(60,60,65);
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-body > section{
-  position: relative;
-  padding: 4%
-}
-
-.example-block {
-    font-family: 'Noto Sans HK', sans-serif;
-}
-
-
-* {
-  padding: 0;
-  margin:0;
-  box-sizing: border-box;
-}
-
-img {
-  max-width:100%;
-}
-a {
-  text-decoration: none;
-    color: inherit;
-} */
-
 @media (min-width: 640px) {
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -772,9 +739,6 @@ a {
   .md\:justify-start {
     justify-content: flex-start;
   }
-  .md\:justify-between {
-    justify-content: space-between;
-  }
   .md\:gap-5 {
     gap: 1.25rem;
   }
@@ -792,5 +756,3 @@ a {
     line-height: 0.45;
   }
 }
-
-
